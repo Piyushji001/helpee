@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const MOCK_USER = {
+const TEST_USER = {
   email: "test123@gmail.com",
   password: "123456",
   department: "IT"
@@ -32,9 +32,9 @@ const LoginForm = () => {
     }
 
     if (
-      email === MOCK_USER.email &&
-      password === MOCK_USER.password &&
-      department === MOCK_USER.department
+      email === TEST_USER.email &&
+      password === TEST_USER.password &&
+      department === TEST_USER.department
     ) {
       localStorage.setItem("isLoggedIn", "true");
       console.log("Logged in successfully. Navigating...");
